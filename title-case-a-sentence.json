@@ -1,3 +1,4 @@
+function titleCase(str){
 let newstring="";
 let string_array = str.toLowerCase().split(" ");
 for (let i=0; i<string_array.length;i++){
