@@ -1,1 +1,15 @@
-{"index.js":"function titleCase(str) {\n  let newstring=\"\";\n  let string_array = str.toLowerCase().split(\" \");\n  for (let i=0; i<string_array.length;i++){\n    newstring+=string_array[i][0].toUpperCase() + string_array[i].substring(1);\n    if (i<string_array.length-1){\n      newstring+=\" \"; \n    }\n  }\n\n  console.log(str+ \" \"+ newstring)\n  return newstring;\n}\n\ntitleCase(\"I'm a little tea pot\");\ntitleCase(\"I'm a little tea pot\")\ntitleCase(\"sHoRt AnD sToUt\");\ntitleCase(\"HERE IS MY HANDLE HERE IS MY SPOUT\")"}
+let newstring="";
+let string_array = str.toLowerCase().split(" ");
+for (let i=0; i<string_array.length;i++){
+  newstring+=string_array[i][0].toUpperCase() + string_array[i].substring(1);
+  if (i<string_array.length-1){
+  newstring+=" ";
+}
+}
+console.log(str+ " "+ newstring);
+return newstring;
+}
+titleCase("I'm a little tea pot");
+titleCase("I'm a little tea pot")
+titleCase("sHoRt AnD sToUt");
+titleCase("HERE IS MY HANDLE HERE IS MY SPOUT")"}
