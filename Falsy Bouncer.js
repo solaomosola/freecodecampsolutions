@@ -17,3 +17,17 @@ arr.map((val)=>{
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+
+//Better Method using Filter
+
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  arr = arr.filter((val)=>{
+    return (val&&true)
+  })
+  console.log(arr)
+  return arr;
+}
+
+bouncer([7, "ate", "", false, 9]);
